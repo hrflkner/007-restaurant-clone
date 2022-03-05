@@ -1,0 +1,29 @@
+header {
+    /*
+      Header left to intentionally collapse
+      so the following section shifts up.
+    */
+    padding: 0;
+
+    ul {
+        /* Layout */
+        display: flow-root;
+        float: right;
+
+        /* Design */
+        list-style: none;
+    }
+    li {
+        float: left;
+        padding: 2rem;
+    }
+    a {
+        /* Design */
+        text-decoration: none;
+        color: black;
+
+        /* Typography */
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+}

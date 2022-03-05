@@ -1,0 +1,51 @@
+.block1 {
+    height: 50vw;
+    background-image: url('../../assets/main-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .logo {
+        margin-bottom: 10vw;
+    }
+    h1 {
+        font-size: 5.5vw;
+        font-weight: 700;
+    }
+    .search-icon {
+        color: grey;
+        transform: translateX(0.7vw) scale(170%);
+    }
+    input,
+    button {
+        margin: 4rem 0;
+    }
+    input {
+        padding: 1.7rem 20vw 1.7rem 1.5vw;
+        border-radius: 5px 0 0 5px;
+        margin-left: -1.2rem;
+    }
+    button {
+        /* Layout */
+        padding: 1.8rem 1vw;
+        margin: -2rem;
+
+        /* Typography */
+        color: white;
+        background-color: rgb(255, 123, 0);
+        border: 1px solid rgb(255, 123, 0);
+        border-radius: 0 5px 5px 0;
+    }
+    .social-links > li {
+        /* Layout */
+        float: left;
+        margin: 0.5vw 0;
+        padding: 0 6rem 0 0;
+
+        /* Typography */
+        font-size: 1.5vw;
+    }
+    .socialicon {
+        color: rgb(255, 123, 0);
+        padding-right: 0.5vw;
+    }
+}

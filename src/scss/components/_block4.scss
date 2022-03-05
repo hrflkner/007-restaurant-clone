@@ -1,0 +1,61 @@
+.block4 {
+    /* Layout */
+    text-align: center;
+    padding: 10rem 2vw;
+
+    /* Design */
+    background-image: url('../../assets/book-tables-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .block-description {
+        /* Typography */
+        font-size: 1vw;
+        color: rgb(255, 123, 0);
+    }
+    h3 {
+        /* Typography */
+        font-size: 3vw;
+        font-weight: 600;
+
+        /* Layout */
+        margin: 1vw 0 2vw;
+    }
+    span {
+        /* Layout */
+        display: block;
+        margin: 1vw;
+
+        /* Typography */
+        font-size: 1vw;
+    }
+    .contact-icon {
+        /* Design */
+        color: rgb(255, 123, 0);
+        border: 1px solid rgb(255, 123, 0);
+        border-radius: 50%;
+        padding: 1vw;
+
+        /* Typography */
+        font-size: 1vw;
+    }
+    .contact-number {
+        /* Typography */
+        color: rgb(255, 123, 0);
+        font-size: 2vw;
+    }
+    div {
+        display: flex;
+        align-items: left;
+        justify-content: space-evenly;
+        margin: 1vw 20vw 2vw;
+
+        /* Typography */
+        font-weight: 700;
+        text-align: left;
+
+        & > section span:nth-of-type(2) {
+            font-size: 1.5vw;
+        }
+    }
+}

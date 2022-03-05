@@ -1,0 +1,56 @@
+.block3 {
+    /* Layout */
+    text-align: center;
+    padding: 10rem 2vw;
+    background-color: rgb(216, 227, 231);
+
+    span {
+        /* Typography */
+        font-size: 1vw;
+        color: rgb(255, 123, 0);
+    }
+    h3 {
+        /* Typography */
+        font-size: 3vw;
+        font-weight: 600;
+
+        /* Layout */
+        margin: 1vw 0;
+    }
+    ul {
+        &:first-of-type {
+            /* Layout */
+            display: block;
+
+            li {
+                /* Layout */
+                display: inline-block;
+                padding: 1vw 2rem;
+                margin-left: -0.3rem;
+
+                /* Typography */
+                font-size: 1vw;
+
+                /* Design */
+                border-bottom: 2px solid grey;
+            }
+            li:first-of-type {
+                /* ~~Temp Design */
+                color: rgb(255, 123, 0);
+                border-bottom: 2px solid rgb(255, 123, 0);
+            }
+        }
+        &:nth-of-type(2) {
+            margin-top: 4rem;
+        }
+        &:nth-of-type(3) {
+            margin-top: 2rem;
+        }
+    }
+    img {
+        /* Layout */
+        height: 30rem;
+        width: 25rem;
+        margin: 1rem 2rem;
+    }
+}

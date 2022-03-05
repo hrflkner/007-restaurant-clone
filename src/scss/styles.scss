@@ -1,0 +1,27 @@
+/* CSS Reset
+-------------*/
+@forward './helpers/reset';
+
+/* Navigation Bar 
+------------------*/
+@use './components/navbar';
+
+/* Block 1
+-----------*/
+@use './components/block1';
+
+/* Block 2
+-----------*/
+@use './components/block2';
+
+/* Block 3
+----------*/
+@use './components/block3';
+
+/* Block 4
+----------*/
+@use './components/block4';
+
+/* Block 5
+----------*/
+@use './components/block5';

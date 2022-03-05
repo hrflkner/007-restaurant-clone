@@ -1,0 +1,446 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Rem Settings and Box-Sizing */
+html {
+  font-size: 62.5%;
+  font-family: "El Messiri", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  /* Layout */
+  padding: 0;
+}
+body header,
+body main > section,
+body footer {
+  padding: 0 15rem;
+}
+
+header {
+  /*
+    Header left to intentionally collapse
+    so the following section shifts up.
+  */
+  padding: 0;
+}
+header ul {
+  /* Layout */
+  display: flow-root;
+  float: right;
+  /* Design */
+  list-style: none;
+}
+header li {
+  float: left;
+  padding: 2rem;
+}
+header a {
+  /* Design */
+  text-decoration: none;
+  color: black;
+  /* Typography */
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.block1 {
+  height: 50vw;
+  background-image: url("../../assets/main-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.block1 .logo {
+  margin-bottom: 10vw;
+}
+.block1 h1 {
+  font-size: 5.5vw;
+  font-weight: 700;
+}
+.block1 .search-icon {
+  color: grey;
+  transform: translateX(0.7vw) scale(170%);
+}
+.block1 input,
+.block1 button {
+  margin: 4rem 0;
+}
+.block1 input {
+  padding: 1.7rem 20vw 1.7rem 1.5vw;
+  border-radius: 5px 0 0 5px;
+  margin-left: -1.2rem;
+}
+.block1 button {
+  /* Layout */
+  padding: 1.8rem 1vw;
+  margin: -2rem;
+  /* Typography */
+  color: white;
+  background-color: #ff7b00;
+  border: 1px solid #ff7b00;
+  border-radius: 0 5px 5px 0;
+}
+.block1 .social-links > li {
+  /* Layout */
+  float: left;
+  margin: 0.5vw 0;
+  padding: 0 6rem 0 0;
+  /* Typography */
+  font-size: 1.5vw;
+}
+.block1 .socialicon {
+  color: #ff7b00;
+  padding-right: 0.5vw;
+}
+
+.block2 {
+  height: 40vw;
+  background-image: url("../../assets/block2-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 40vw;
+  padding: 4vw 0 0 40vw;
+}
+.block2 span {
+  display: inline-block;
+  color: #ff7b00;
+  font-size: 1.4vw;
+  margin-bottom: 1rem;
+}
+.block2 h2 {
+  font-size: 4vw;
+  font-weight: 600;
+}
+.block2 p {
+  /* Layout */
+  margin: 2.5rem 0;
+  max-width: 60%;
+  /* Typography */
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.block2 button {
+  margin: 2rem 0;
+  padding: 0.7vw 1vw;
+  border: none;
+  color: white;
+}
+.block2 button:first-of-type {
+  background-color: #ff7b00;
+  border-radius: 5px 0 0 5px;
+  padding: 0.7vw 1vw;
+}
+.block2 button:nth-of-type(2) {
+  background-color: #ff9737;
+  border-left: 1px solid white;
+  border-radius: 0 5px 5px 0;
+  margin-left: -1rem;
+  padding: 0.7vw 0.8vw;
+}
+
+.block3 {
+  /* Layout */
+  text-align: center;
+  padding: 10rem 2vw;
+  background-color: #d8e3e7;
+}
+.block3 span {
+  /* Typography */
+  font-size: 1vw;
+  color: #ff7b00;
+}
+.block3 h3 {
+  /* Typography */
+  font-size: 3vw;
+  font-weight: 600;
+  /* Layout */
+  margin: 1vw 0;
+}
+.block3 ul:first-of-type {
+  /* Layout */
+  display: block;
+}
+.block3 ul:first-of-type li {
+  /* Layout */
+  display: inline-block;
+  padding: 1vw 2rem;
+  margin-left: -0.3rem;
+  /* Typography */
+  font-size: 1vw;
+  /* Design */
+  border-bottom: 2px solid grey;
+}
+.block3 ul:first-of-type li:first-of-type {
+  /* ~~Temp Design */
+  color: #ff7b00;
+  border-bottom: 2px solid #ff7b00;
+}
+.block3 ul:nth-of-type(2) {
+  margin-top: 4rem;
+}
+.block3 ul:nth-of-type(3) {
+  margin-top: 2rem;
+}
+.block3 img {
+  /* Layout */
+  height: 30rem;
+  width: 25rem;
+  margin: 1rem 2rem;
+}
+
+.block4 {
+  /* Layout */
+  text-align: center;
+  padding: 10rem 2vw;
+  /* Design */
+  background-image: url("../../assets/book-tables-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.block4 .block-description {
+  /* Typography */
+  font-size: 1vw;
+  color: #ff7b00;
+}
+.block4 h3 {
+  /* Typography */
+  font-size: 3vw;
+  font-weight: 600;
+  /* Layout */
+  margin: 1vw 0 2vw;
+}
+.block4 span {
+  /* Layout */
+  display: block;
+  margin: 1vw;
+  /* Typography */
+  font-size: 1vw;
+}
+.block4 .contact-icon {
+  /* Design */
+  color: #ff7b00;
+  border: 1px solid #ff7b00;
+  border-radius: 50%;
+  padding: 1vw;
+  /* Typography */
+  font-size: 1vw;
+}
+.block4 .contact-number {
+  /* Typography */
+  color: #ff7b00;
+  font-size: 2vw;
+}
+.block4 div {
+  display: flex;
+  align-items: left;
+  justify-content: space-evenly;
+  margin: 1vw 20vw 2vw;
+  /* Typography */
+  font-weight: 700;
+  text-align: left;
+}
+.block4 div > section span:nth-of-type(2) {
+  font-size: 1.5vw;
+}
+
+.block5 {
+  /* Layout */
+  text-align: center;
+  padding: 10rem 25vw;
+}
+.block5 .block-description {
+  /* Typography */
+  font-size: 1vw;
+  color: #ff7b00;
+}
+.block5 h3 {
+  /* Typography */
+  font-size: 3vw;
+  font-weight: 600;
+  /* Layout */
+  margin: 1vw 0 2vw;
+}
+.block5 span {
+  /* Layout */
+  display: block;
+}
+.block5 img {
+  /* Layout */
+  margin-bottom: 2rem;
+}
+.block5 .customer-name {
+  font-size: 1.6vw;
+  margin-bottom: 0;
+}
+.block5 .customer-occupation {
+  /* Typography */
+  color: grey;
+  font-size: 1vw;
+}
+.block5 .rating {
+  /* Typography */
+  font-size: 1vw;
+  color: #ffba25;
+}
+.block5 .rating i {
+  /* Layout */
+  margin: 1vw 0.25vw;
+}
+.block5 p {
+  /* Typography */
+  font-size: 1.2vw;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* CSS Reset
+-------------*/
+/* Navigation Bar 
+------------------*/
+/* Block 1
+-----------*/
+/* Block 2
+-----------*/
+/* Block 3
+----------*/
+/* Block 4
+----------*/
+/* Block 5
+----------*//*# sourceMappingURL=styles.css.map */
